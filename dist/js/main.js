@@ -1,4 +1,20 @@
 "use strict";
 
-console.log("Hello World from app.js! \nChange this message, and make sure it changes in the browser \nto verify that you're working in the right files.");
+console.log("Hello");
+
+var dropdown = document.querySelector("header nav ul");
+var burger = document.querySelector(".hamburger");
+
+dropdown.style.display = "none";
+var open = function open() {
+	if (dropdown.style.display == "none") {
+		dropdown.style.display = "block";
+		burger.style.transform = "rotate(90deg)";
+	} else {
+		dropdown.style.display = "none";
+		burger.style.transform = "none";
+	}
+};
+
+burger.addEventListener("click", open);
 //# sourceMappingURL=main.js.map

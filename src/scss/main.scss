@@ -24,12 +24,56 @@ TABLE OF CONTENTS:
 }
 
 body {
-	background: #fff;
-	
+	background: #fff;	
+}
+
+/* 2. Content ================================= */
+
+.sect-1{
+	background: url(../img/bg.png) top no-repeat;
+	background-size: cover;
+	height: 975px;
+	width: 100%;
+	border-bottom: 20px solid #fff;
+}
+
+header{
+	img{
+		margin: 68px 4.791666666666667%; //69/1440
+	}
+
+	.hamburger{
+		div{
+			background: #04b3c9;
+			height: 12px;
+			width: 4.722222222222222%; //68/1440
+			border-radius: 10px;
+			margin-bottom: 10px;
+		}
+	}	
+}
+
+.sect-2{
+	background: #fffbd6;
+	height: 530px;
+	width: 100%;
+	border-bottom: 20px solid #fff;
+	display: flex;
+
+	img{
+		position: relative;
+		top: -60px;
+		margin-left: 13.333333333333333%;//192/1440
+	}
 }
 
 
 
 
-/* 2. Content ================================= */
+
+
+
+
+
+
 
