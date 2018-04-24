@@ -121,7 +121,7 @@ nav{
 		}
 
 		p{
-			color: #215c69;
+			color: #014458;
 			font-size: 17px;
 			line-height: 20px;
 			margin-bottom: 20px;
@@ -139,14 +139,63 @@ nav{
 	}
 }
 
-
 .sect-3{
 	background: url(../img/hills.png) top no-repeat;
 	background-size: cover;
 	height: 1000px;
 	width: 100%;
 	margin-top: 20px;
+
+	h2{
+		font-size: 30px;
+		margin-left: 45%;
+		margin-right: 15%;
+		text-align: center;
+		color: #014458;
+
+		span{
+			color: #04b3c9;
+		}
+	}
 }
+
+h3{
+	font-size: 25px;
+	color: #04b3c9;
+}
+
+.box-1{
+	background: #fff;
+	width: 28.125%;//405/1440
+	height: 470px;
+	display: flex;
+	flex-direction: column;
+	// justify-content: space-around;
+	margin: 5%;
+	padding: 2% 7%;
+	border: 2px solid grey;
+	line-height: 20px;
+
+	ul{
+		padding-left: 10%;
+
+		li{
+			list-style-type: disc;
+
+		}
+	}
+
+	button{
+		height: 49px;
+		width: 100%;
+		border-radius: 13px;
+		background: #04b3c9;
+		color: #fff;
+		font-size: 22px;
+	}
+}
+
+
 
 
 

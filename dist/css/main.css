@@ -164,7 +164,7 @@ nav ul div {
 }
 
 .sect-2 div p {
-	color: #215c69;
+	color: #014458;
 	font-size: 17px;
 	line-height: 20px;
 	margin-bottom: 20px;
@@ -186,6 +186,52 @@ nav ul div {
 	height: 1000px;
 	width: 100%;
 	margin-top: 20px;
+}
+
+.sect-3 h2 {
+	font-size: 30px;
+	margin-left: 45%;
+	margin-right: 15%;
+	text-align: center;
+	color: #014458;
+}
+
+.sect-3 h2 span {
+	color: #04b3c9;
+}
+
+h3 {
+	font-size: 25px;
+	color: #04b3c9;
+}
+
+.box-1 {
+	background: #fff;
+	width: 28.125%;
+	height: 470px;
+	display: flex;
+	flex-direction: column;
+	margin: 5%;
+	padding: 2% 7%;
+	border: 2px solid grey;
+	line-height: 20px;
+}
+
+.box-1 ul {
+	padding-left: 10%;
+}
+
+.box-1 ul li {
+	list-style-type: disc;
+}
+
+.box-1 button {
+	height: 49px;
+	width: 100%;
+	border-radius: 13px;
+	background: #04b3c9;
+	color: #fff;
+	font-size: 22px;
 }
 
 /*# sourceMappingURL=main.css.map */
