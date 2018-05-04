@@ -88,54 +88,45 @@ body {
 	border-bottom: 20px solid #fff;
 }
 
-header img {
+header .logo {
+	width: 13%;
+	height: 13%;
 	margin: 68px 4.791666666666667%;
 	float: left;
 }
 
-.hamburger div {
-	background: #04b3c9;
-	height: 12px;
-	width: 4.722222222222222%;
-	border-radius: 10px;
-	margin-bottom: 10px;
+header a {
+	float: right;
+	margin: 68px 5% 68px 0;
+	color: #00b4cb;
 }
 
-nav ul {
-	position: absolute;
-	top: 0;
-	background-color: rgba(203, 231, 233, 0.9);
-	height: 975px;
-	width: 100%;
-	z-index: 20;
-	padding-top: 40px;
-}
-
-nav ul li {
-	margin: 40px 6% 0;
-	padding: 10px;
-	font-size: 20px;
-}
-
-nav ul li a {
-	color: #04b3c9;
+header a:link {
 	text-decoration: none;
-	font-family: arial;
 }
 
-nav ul li a:hover {
+header a:visited {
+	text-decoration: none;
+}
+
+header a:hover {
+	text-decoration: none;
 	color: #f69f8d;
 	cursor: pointer;
 }
 
-nav ul div {
-	color: #04b3c9;
-	font-family: arial;
-	font-size: 60px;
-	float: right;
-	padding: 10px;
-	margin-right: 30px;
-	cursor: pointer;
+header a:active {
+	text-decoration: none;
+	color: #00b4cb;
+}
+
+header .link {
+	position: absolute;
+	right: 3%;
+	top: 48px;
+	margin-top: 20px;
+	width: 1.5%;
+	height: 3%;
 }
 
 .sect-2 {
@@ -149,11 +140,11 @@ nav ul div {
 .sect-2 img {
 	position: relative;
 	top: -60px;
-	margin-left: 13.333333333333333%;
+	margin-left: 10%;
 }
 
 .sect-2 div {
-	margin: 70px 15% 70px 2%;
+	margin: 70px 10% 70px 2%;
 }
 
 .sect-2 div h2 {
@@ -180,10 +171,16 @@ nav ul div {
 	margin-left: 20%;
 }
 
+.sect-2 div button:hover {
+	background: #f69f8d;
+	cursor: pointer;
+}
+
 .sect-3 {
+	position: relative;
 	background: url(../img/hills.png) top no-repeat;
 	background-size: cover;
-	height: 1000px;
+	height: 1500px;
 	width: 100%;
 	margin-top: 20px;
 }
@@ -203,30 +200,21 @@ nav ul div {
 h3 {
 	font-size: 25px;
 	color: #04b3c9;
+	line-height: 33px;
 }
 
-.box-1 {
+.box {
+	position: absolute;
 	background: #fff;
 	width: 28.125%;
-	height: 470px;
 	display: flex;
 	flex-direction: column;
-	margin: 5%;
-	padding: 2% 7%;
-	border: 2px solid grey;
+	padding: 2% 5%;
+	border: 3px solid #bdb8b7;
 	line-height: 20px;
 }
 
-.box-1 ul {
-	padding-left: 10%;
-}
-
-.box-1 ul li {
-	list-style-type: disc;
-	font-size: 16px;
-}
-
-.box-1 button {
+.box button {
 	height: 49px;
 	width: 100%;
 	border-radius: 13px;
@@ -234,6 +222,118 @@ h3 {
 	color: #fff;
 	font-size: 22px;
 	margin-bottom: 5px;
+}
+
+.box button:hover {
+	background: #f69f8d;
+	cursor: pointer;
+}
+
+.box p {
+	color: #004459;
+	margin: 20px 0;
+}
+
+.box-1 {
+	top: 20px;
+	height: 470px;
+	margin: 0 16%;
+}
+
+.box-1 ul {
+	padding-left: 10%;
+}
+
+.box-1 ul li {
+	color: #004459;
+	list-style-type: disc;
+	font-size: 16px;
+	line-height: 25px;
+}
+
+.box-2 {
+	top: 380px;
+	height: 300px;
+	margin: 0 60%;
+}
+
+.box-2 form li {
+	color: #004459;
+	list-style-type: none;
+	font-size: 16px;
+	line-height: 55px;
+}
+
+.box-2 form li input {
+	border: 2px solid #004459;
+	font-size: 16px;
+	border-radius: 5px;
+	margin-left: 3%;
+}
+
+.box-2 form li select {
+	border: 2px solid #004459;
+	font-size: 16px;
+}
+
+.box-3 {
+	top: 695px;
+	height: 255px;
+	margin: 0 16%;
+}
+
+footer {
+	background: #006e7d;
+	display: flex;
+	flex-wrap: wrap;
+	color: #cae7ea;
+	padding: 30px 10%;
+}
+
+footer h4 {
+	font-size: 20px;
+	padding-bottom: 30px;
+}
+
+footer a {
+	color: #cae7ea;
+	line-height: 20px;
+}
+
+footer a:link {
+	text-decoration: none;
+}
+
+footer a:visited {
+	text-decoration: none;
+}
+
+footer a:hover {
+	text-decoration: none;
+	color: #f69f8d;
+	cursor: pointer;
+}
+
+footer a:active {
+	text-decoration: none;
+	color: #cae7ea;
+}
+
+footer section {
+	display: flex;
+	flex-direction: row;
+	width: 50%;
+}
+
+footer section .links {
+	display: flex;
+	flex-direction: column;
+	margin-right: 5%;
+}
+
+footer .copyright {
+	margin-top: 20px;
+	font-size: 13px;
 }
 
 /*# sourceMappingURL=main.css.map */
