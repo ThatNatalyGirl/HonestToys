@@ -8,23 +8,33 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<link rel="stylesheet" href="dist/css/main.css">
+		<link rel="font" href="dist/Luna.ttf">
 		
 	</head>
 	<body>
 		<section class="sect-1">
 			<div class="pop-up">
 				<img class="logo2" src="dist/img/honest-logo.png" alt="The Honest Co.">
-				<h4>Get $30 off of our newest bundle:</h4>
-				<h1>Honest Toys</h1>
+				<h1>Get $30 off of our newest bundle:</h1>
+				<h1 class="title">Honest Toys</h1>
 				<h2>+ free shipping when you order now!</h2>
 				<p>Honest Toys are organic, eco-friendly, made from natural materials, and never contain toxic chemicals!</p>
 				<button>Get Started</button>
 			</div>
 			<header>
 				<img class="logo" src="dist/img/honest-logo.png" alt="The Honest Co.">
-				<a href="#">Full Honest Co Site</a>
-				<img class="link" src="dist/img/external-link.png" alt="Click here marker">
+				<a href="#">Full Honest Co Site<img class="link" src="dist/img/external-link.png" alt="Click here marker"></a>		
 			</header>
+			<div class="toys">
+				<div class="holder">
+					<img class="toy bear" src="dist/img/bear.png" alt="cartoon bear" draggable="true">
+					<img class="toy stack" src="dist/img/stack.png" alt="cartoon stack of play rings" draggable="true">
+					<img class="toy car" src="dist/img/car.png" alt="cartoon car" draggable="true">
+				</div>	
+				<div class="holder">
+					<img class="box" src="dist/img/box-front.png" alt=" box">
+				</div>		
+			</div>	
 		</section>
 
 		<section class="sect-2">
@@ -159,6 +169,7 @@
 		</footer>
 
 		<script src="dist/js/main.js"></script>
+		<script src="dist/js/dragging.js"></script>
 
 	</body>
 </html>

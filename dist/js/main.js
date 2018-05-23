@@ -17,4 +17,12 @@ console.log("Hello");
 // x.addEventListener("click", function(){
 // 	dropdown.style.display = "none"
 // });
+
+
+var popup = document.querySelector(".pop-up ");
+var popupButton = document.querySelector(".pop-up button");
+
+popupButton.addEventListener('click', function () {
+	popup.style.display = "none";
+});
 //# sourceMappingURL=main.js.map

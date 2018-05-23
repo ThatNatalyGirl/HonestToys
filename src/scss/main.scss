@@ -23,22 +23,24 @@ TABLE OF CONTENTS:
 	box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Luna';
+    src: url('../Luna.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
 body {
 	background: #fff;	
 	width: 100%;
 	height: 100%;
-	font-family: arial;
+	font-family: 'Luna';
+	display: flex;
+	flex-direction: column;
 }
 
 /* 2. Content ================================= */
 
-.sect-1{
-	background: url(../img/bg.png) top no-repeat;
-	background-size: cover;
-	height: 975px;
-	width: 100%;
-	border-bottom: 20px solid #fff;
-}
 
 header{
 	.logo{
@@ -46,12 +48,14 @@ header{
 		height: 13%;
 		margin: 68px 4.791666666666667%; //69/1440
 		float: left;
+		z-index: -1;
 	}
 
 	a{
 		float: right;
 		margin: 68px 5% 68px 0;
 		color: #00b4cb;
+		transition: .3s;
 
 		&:link {
 			text-decoration: none;
@@ -65,6 +69,7 @@ header{
 			text-decoration: none;
 			color: #f69f8d;
 			cursor: pointer;
+			transition: .3s;
 		}
 
 		&:active {
@@ -78,8 +83,9 @@ header{
 		right: 3%;
 		top: 48px;
 		margin-top: 20px;
-		width: 1.5%;
-		height: 3%;
+		width: 2.5%;
+		height: auto;
+		z-index: -1;
 	}
 }
 
@@ -87,13 +93,141 @@ header{
 	background: #fffbd6;
 	display: flex;
 	flex-direction: column;
-	align-content: space-around;
-	img{
+	text-align: center;
+	height: 100%;
+	color: #014458; 
+	z-index: 5;
 
+	img{
+		height: auto;
+		width: 30%;
+		align-self: center;
+	}
+
+	button{
+		background: #04b3c9;
+		border-radius: 15px;
+		height: 57px;
+		width: 50%;//252/1440
+		color: #fff;
+		font-size: 30px;
+		align-self: center;
+		transition: .3s;
+		font-family: 'Luna';
+
+		&:hover{
+			background: #f69f8d;
+			cursor: pointer;
+			transition: .3s;
+		}
+	}
+
+	h1{
+		font-size: 1.2em;
+		margin: 40px 0 0;
+	}
+
+	.title{
+		text-shadow: 1px 1px 1px #04b3c9;
+	}
+
+	h2{
+		margin: 40px 0;
+	}
+
+	p{
+		width: 50%;
+		align-self: center;
+		font-size: .9em;
+		color: #04b3c9;
+		margin-bottom: 40px;
+		line-height: 18px;
 	}
 }
 
+.sect-1{
+	background: url(../img/bg.png) top center no-repeat;
+	background-size: cover;
+	height: 975px; //975px
+	width: 100%;
+	border-bottom: 20px solid #fff;
+	z-index: 2;
 
+	.toys{
+		background: transparent;
+		height: 500px;
+		position: relative;
+		top: 0;
+		z-index: -1;
+		.bear{
+			width: 100px;
+			height: auto;
+			background: url(../img/bear-glow.png);
+			top: 304px;
+			left: 46%;
+		}
+
+		.car{
+			width: 80px;
+			height: auto;
+			background: url(../img/car-glow.png);
+			top: 300px;
+			left: 20%;
+		}
+
+		.stack{
+			width: 80px;
+			height: auto;
+			background: url(../img/stack-glow.png);
+			top: 300px;
+			left: 20%;
+		}
+
+		.toy{
+			position: absolute;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			width: 10%;
+		}
+
+		.box{
+			z-index: 3;
+			width: 100%;
+			height: auto;
+			top: 300px;
+			left: 20%;
+		}
+
+		.held {
+			background: url(../img/stack-glow.png);
+		}
+
+		.holder {
+		 	z-index: 3;
+			width: 20%;
+			height: auto;
+			margin: 10px;
+			display: inline-block;
+		}
+
+		.hovered {
+			background: url(../img/stack-glow.png);
+		}
+
+		.invisible {
+			display: none;
+		}
+
+	}
+
+}
+
+.sect-2, .sect-3{
+	display: none;
+	z-index: -1;
+
+}
 
 // .hamburger{
 // 	div{
@@ -144,167 +278,12 @@ header{
 // 	}
 // }
 
-.sect-2{
-	background: #fffbd6;
-	height: 530px;
-	width: 100%;
-	border-bottom: 20px solid #fff;
-	display: flex;
 
-	img{
-		position: relative;
-		top: -60px;
-		margin-left: 10%;//192/1440
-		
-	}
-
-	div{
-		margin: 70px 10% 70px 2%;
-
-		h2{
-			color: #04b3c9;
-			font-size: 30px;
-			text-align: center;
-			margin-bottom: 25px;
-		}
-
-		p{
-			color: #014458;
-			font-size: 17px;
-			line-height: 20px;
-			margin-bottom: 20px;
-		}
-
-		button{
-			background: #04b3c9;
-			border-radius: 15px;
-			height: 57px;
-			width: 65%;//252/1440
-			color: #fff;
-			font-size: 30px;
-			margin-left: 20%;
-
-			&:hover{
-				background: #f69f8d;
-				cursor: pointer;
-			}
-		}
-	}
-}
-
-.sect-3{
-	position: relative;
-	background: url(../img/hills.png) top no-repeat;
-	background-size: cover;
-	height: 1500px;
-	width: 100%;
-	margin-top: 20px;
-
-	h2{
-		font-size: 30px;
-		margin-left: 45%;
-		margin-right: 15%;
-		text-align: center;
-		color: #014458;
-
-		span{
-			color: #04b3c9;
-		}
-	}
-}
-
-h3{
-	font-size: 25px;
-	color: #04b3c9;
-	line-height: 33px;
-}
-
-.box{
-	position: absolute;
-	background: #fff;
-	width: 28.125%;//405/1440
-	display: flex;
-	flex-direction: column;
-	// justify-content: space-around;
-	padding: 2% 5%;
-	border: 3px solid #bdb8b7;
-	line-height: 20px;
-
-	button{
-		height: 49px;
-		width: 100%;
-		border-radius: 13px;
-		background: #04b3c9;
-		color: #fff;
-		font-size: 22px;
-		margin-bottom: 5px;
-
-		&:hover{
-			background: #f69f8d;
-			cursor: pointer;
-		}
-	}
-
-	p{
-		color: #004459;
-		margin: 20px 0;
-	}
-}
-
-
-.box-1{
-	top: 20px;
-	height: 470px;
-	margin: 0 16%;
-
-	ul{
-		padding-left: 10%;
-
-		li{
-			color: #004459;
-			list-style-type: disc;
-			font-size: 16px;
-			line-height: 25px;
-		}
-	}
-}
-
-.box-2{
-	top: 380px;
-	height: 300px;
-	margin: 0 60%;
-
-	form{
-		li{
-			color: #004459;
-			list-style-type: none;
-			font-size: 16px;
-			line-height: 55px;
-
-			input{
-				border: 2px solid #004459;
-				font-size: 16px;
-				border-radius: 5px;
-				margin-left: 3%;
-			}
-			
-			select{
-				border: 2px solid #004459;
-				font-size: 16px;
-			}
-		}
-	}
-}
-
-.box-3{
-	top: 695px;
-	height: 255px;
-	margin: 0 16%;	
-}
 
 footer{
 	background: #006e7d;
 	display: flex;
+	flex-direction: column;
 	flex-wrap: wrap;
 	color: #cae7ea;
 	padding: 30px 10%;
@@ -317,6 +296,7 @@ footer{
 	a{
 		color: #cae7ea;
 		line-height: 20px;
+		transition: .3s;
 
 		&:link {
 			text-decoration: none;
@@ -330,6 +310,7 @@ footer{
 			text-decoration: none;
 			color: #f69f8d;
 			cursor: pointer;
+			transition: .3s;
 		}
 
 		&:active {
@@ -357,4 +338,172 @@ footer{
 	}
 }
 
+/*Large Tablet*/
+@media screen and (min-width: 1024px){
+	.sect-2{
+		background: #fffbd6;
+		height: 530px;
+		width: 100%;
+		border-bottom: 20px solid #fff;
+		display: flex;
+
+		img{
+			position: relative;
+			width: 50%;
+			height: auto;
+			top: -60px;
+			margin-left: 10%;//192/1440
+		}
+
+		div{
+			margin: 70px 10% 70px 2%;
+
+			h2{
+				color: #04b3c9;
+				font-size: 30px;
+				text-align: center;
+				margin-bottom: 25px;
+			}
+
+			p{
+				color: #014458;
+				font-size: 17px;
+				line-height: 20px;
+				margin-bottom: 20px;
+			}
+
+			button{
+				background: #04b3c9;
+				border-radius: 15px;
+				height: 57px;
+				width: 65%;//252/1440
+				color: #fff;
+				font-size: 30px;
+				margin-left: 20%;
+				transition: .3s;
+				font-family: 'Luna';
+
+				&:hover{
+					background: #f69f8d;
+					cursor: pointer;
+					transition: .3s;
+				}
+			}
+		}
+	}
+
+	.sect-3{
+		position: relative;
+		background: url(../img/hills.png) top no-repeat;
+		background-size: cover;
+		height: 1500px;
+		width: 100%;
+		margin-top: 20px;
+		display: block;
+
+		h2{
+			font-size: 30px;
+			margin-left: 45%;
+			margin-right: 15%;
+			text-align: center;
+			color: #014458;
+
+			span{
+				color: #04b3c9;
+			}
+		}
+	}
+
+	h3{
+		font-size: 25px;
+		color: #04b3c9;
+		line-height: 33px;
+	}
+
+	.box{
+		position: absolute;
+		background: #fff;
+		width: 28.125%;//405/1440
+		display: flex;
+		flex-direction: column;
+		// justify-content: space-around;
+		padding: 2% 5%;
+		border: 3px solid #bdb8b7;
+		line-height: 20px;
+
+		button{
+			height: 49px;
+			width: 100%;
+			border-radius: 13px;
+			background: #04b3c9;
+			color: #fff;
+			font-size: 22px;
+			margin-bottom: 5px;
+			transition: .3s;
+			font-family: 'Luna';
+
+			&:hover{
+				background: #f69f8d;
+				cursor: pointer;
+				transition: .3s;
+			}
+		}
+
+		p{
+			color: #004459;
+			margin: 20px 0;
+		}
+	}
+
+
+	.box-1{
+		top: 20px;
+		height: 470px;
+		margin: 0 16%;
+
+		ul{
+			padding-left: 10%;
+
+			li{
+				color: #004459;
+				list-style-type: disc;
+				font-size: 16px;
+				line-height: 25px;
+			}
+		}
+	}
+
+	.box-2{
+		top: 380px;
+		height: 300px;
+		margin: 0 60%;
+
+		form{
+			li{
+				color: #004459;
+				list-style-type: none;
+				font-size: 16px;
+				line-height: 55px;
+
+				input{
+					border: 2px solid #004459;
+					font-size: 16px;
+					border-radius: 5px;
+					margin-left: 3%;
+				}
+				
+				select{
+					border: 2px solid #004459;
+					font-size: 16px;
+				}
+			}
+		}
+	}
+
+	.box-3{
+		top: 695px;
+		height: 255px;
+		margin: 0 16%;	
+	}
+}
 
